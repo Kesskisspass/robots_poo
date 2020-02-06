@@ -29,4 +29,13 @@ class Robot:
         self.direction = 0
 
     def _etat(self):
-        print(f"Position x:{self.x}, y: {self.y}, Direction: {Robot.direction[self.direction]} ")
+        str_turbo = ""
+        try:
+            if(self._turbo):
+                str_turbo = "le mode Turbo est activé"
+            elif(self._turbo == False):
+                str_turbo = "le mode Turbo est desactivé"
+            pass
+        except AttributeError:
+            str_turbo = "pas de mode Tubo sur ce modèle"
+        print(f"{self.nom} est un robot de type {self.__class__.__name__}, Position x:{self.x}, y: {self.y}, Direction: {Robot.direction[self.direction]}, {str_turbo}")
