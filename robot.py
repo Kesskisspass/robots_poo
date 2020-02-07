@@ -41,4 +41,4 @@ class Robot:
             pass
         except AttributeError:
             str_turbo = "pas de mode Tubo sur ce modèle"
-        print(f"{self.nom} est un robot de type {self.__class__.__name__},\n Position x:{self.x}, y: {self.y}, \nDirection: {Robot.direction[self.direction]}, \n{str_turbo}\n")
+        print(f"====\n{self.nom} est un robot de type {self.__class__.__name__},\nPosition x:{self.x}, y: {self.y}, \nDirection: {Robot.direction[self.direction]}, \n{str_turbo}\n=====\n")
