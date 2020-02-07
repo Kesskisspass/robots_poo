@@ -6,7 +6,7 @@ class RobotNG(Robot):
 
 
     def __init__(self,nom):
-        super(RobotNG, self).__init__(nom)
+        super().__init__(nom)
         self._turbo = False
 
     def _avance(self,nb=1):
