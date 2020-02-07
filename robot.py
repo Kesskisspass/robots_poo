@@ -12,6 +12,7 @@ class Robot:
         self.y = y
         self.direction = index_direction
 
+
     def _avance(self):
         if(self.direction == 0):
             self.x += 1
@@ -21,12 +22,14 @@ class Robot:
             self.x -= 1
         else:
             self.y -= 1
+        self._etat()
 
     def _droite(self):
         if(self.direction < 3):
             self.direction += 1
-            return
-        self.direction = 0
+        else:
+            self.direction = 0
+        self._etat()
 
     def _etat(self):
         str_turbo = ""
