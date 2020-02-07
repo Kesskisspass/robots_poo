@@ -1,5 +1,5 @@
-# robots_poo
+# Robots
 
 ## Learning POO with robots !!!
 
-Lauch app.py on Terminal to play.
+Launch app.py on Terminal to play.
