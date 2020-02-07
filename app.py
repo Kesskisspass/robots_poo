@@ -36,5 +36,5 @@ while((action != "a") | (type != "g") | (action != "d") | (type != "t") | (type 
             robot._switch_turbo()
             action = input("Veuillez entrer une action:\n - 'a' pour Avancer,\n - 'g' pour aller à Gauche,\n - 'd' pour aller à Droite,\n - 't' pour activer le Turbo !\n - 'q' pour Quitter \n")
     else:
-        print("ordre quitter le jeu")
+        print("*****\nVous quittez le jeu, au revoir !\n*****")
         break
